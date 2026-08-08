@@ -574,6 +574,73 @@ h2::after {
     font-size: 0.98rem;
 }
 
+.connect-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.connect-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 34px 28px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.connect-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.connect-card h3 {
+    font-family: var(--font-head);
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.connect-card p {
+    color: var(--ink-soft);
+    font-weight: 700;
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.connect-card__media {
+    width: 100%;
+    max-width: 220px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--line);
+}
+
+.connect-card__media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.connect-card__btn {
+    margin-top: auto;
+    padding: 13px 30px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+    .connect-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ---------- Message ---------- */
 
 .message {
