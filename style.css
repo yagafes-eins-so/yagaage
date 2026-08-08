@@ -12,6 +12,7 @@
     --gold-deep: #d9931a;
     --red: #d8432a;
     --red-deep: #b7351f;
+    --rose: #ef2f6b;
     --espresso: #241710;
     --espresso-soft: #3a291d;
     --line: rgba(43, 29, 19, 0.1);
@@ -335,8 +336,8 @@ h2::after {
     font-weight: 700;
     padding: 9px 16px;
     border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    transition: background 0.25s ease, transform 0.25s ease;
+    border: 1.5px solid var(--red);
+    transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 
 .hero-link:hover {
@@ -348,6 +349,10 @@ h2::after {
     width: 16px;
     height: 16px;
     flex-shrink: 0;
+}
+
+.hero-link__highlight {
+    color: var(--rose);
 }
 
 .scroll-cue {
