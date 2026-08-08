@@ -1,0 +1,9 @@
+# Claude Code local settings
+.claude/
+
+# Old duplicate/backup copy of the site
+images/yagaage/
+
+# OS junk
+Thumbs.db
+.DS_Store
